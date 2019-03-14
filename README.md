@@ -1,7 +1,7 @@
 ember-browser-update
 ==============================================================================
 
-[Short description of the addon.]
+Ember addon providing [browser-update.org](http://browser-update.org/) in your application.
 
 
 Compatibility
@@ -22,13 +22,25 @@ ember install ember-browser-update
 Usage
 ------------------------------------------------------------------------------
 
-[Longer description of how to use the addon in apps.]
+By installing the addon the browser update notification will automatically be shown in outdated browsers.
 
+You can configure browser update in your `config/environment.js` as follows:
 
-Contributing
-------------------------------------------------------------------------------
+```javascript
+module.exports = function(environment) {
+  let ENV = {
+    browserUpdate: {
+      vs: {i:11,f:-3,o:-3,s:-3,c:-3},
+      style: 'corner',
+      l: 'nl',
+      shift_page_down: false,
+      test: true
+    }
+  }
+}
+```
 
-See the [Contributing](CONTRIBUTING.md) guide for details.
+All configuration options are listed [here](http://browser-update.org/customize.html).
 
 
 License
