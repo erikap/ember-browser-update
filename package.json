@@ -1,6 +1,6 @@
 {
   "name": "ember-browser-update",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Ember addon providing browser-update.org in your application.",
   "keywords": [
     "browser-update",
